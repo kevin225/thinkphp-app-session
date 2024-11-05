@@ -1,0 +1,22 @@
+{
+    "name": "mwtech/thinkphp-app-session",
+    "description": "Application level session control based on ThinkPHP/ThinkCmf.The application scenario of this project is a ThinkPHP project serving as the backend for multiple front-end projects. The sessions of each front-end project need to be separated to avoid state interference maintained by sessions, such as user login status.",
+    "type": "library",
+    "require": {
+        "php": ">=7.4.0",
+        "thinkcmf/cmf-app": "^6.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mwtech\\ThinkphpAppSession\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wkm",
+            "email": "wkm@miaowutech.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
