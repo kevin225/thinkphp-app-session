@@ -10,7 +10,7 @@ class AppSessionController extends HomeBaseController
     public function initialize()
     {
         parent::initialize();
-        $this->appSessionHandler = app('http')->getName;  // 使用ThinkPHP的应用名称
+        $this->appSessionHandler = app('http')->getName();  // 使用ThinkPHP的应用名称
     }
 
     /**
