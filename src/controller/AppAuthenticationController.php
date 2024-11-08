@@ -11,12 +11,11 @@ class AppAuthenticationController extends AppSessionController
     {
         parent::initialize();
         // 检查登录状态
-        $userId = $this->get_app_session('user.id');
-        if (empty($userId)) {
+        if (!$this->is_user_login()) {
             $this->error('您尚未登录');
         }
         $this->appUser = $this->get_app_session('user');
-        $this->appUserId = $userId;
+        $this->appUserId = $this->get_app_session('user.id');
         $this->appUserName = $this->get_app_session('user.name');
     }
 }
